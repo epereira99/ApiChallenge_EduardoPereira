@@ -1,0 +1,141 @@
+.App {
+  align-items: center;
+}
+
+.search-box{
+  position: absolute;
+  border: none;
+  outline: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background:white;
+  height: 40px;
+  border-radius: 40px;
+  padding: 10px;
+}
+
+.search-txt{
+  border: none;
+  background-color: none;
+  float: left;
+  padding: 10px;
+  color: #2f3640;
+  font-size: 16px;
+  transition: 0.4;
+  line-height: 40px;
+  width: 360px;
+}
+.card {
+  display: grid;
+  grid-template-columns: 201px;
+  grid-template-rows: 267px 56px 100px;
+  grid-template-areas: "image" "text" "stats";
+
+  border-radius: 18px;
+  background: white;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+  font-family: roboto;
+  text-align: center;
+  transition: 0.5s ease;
+  cursor: pointer;
+  margin:0px;
+}
+
+.cardDetail {
+  display: grid;
+  grid-template-columns: 201px;
+  grid-template-rows: 267px 56px 100px;
+  grid-template-areas: "image" "text" "stats";
+
+  border-radius: 18px;
+  background: white;
+  box-shadow: 5px 5px 15px #164e63;
+  font-family: roboto;
+  text-align: center;
+}
+
+.card-image {
+  grid-area:image;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.card-text {
+  grid-area: text;
+}
+.card-text .date {
+  color: rgb(255, 7, 110);
+  font-size:13px;
+}
+.card-text p {
+  color: grey;
+  font-size:15px;
+  font-weight: 300;
+}
+.card-text h2 {
+  margin-top:0px;
+  font-size:28px;
+}
+
+.card-stats {
+  grid-area: stats; 
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background: rgb(255, 7, 110);
+}
+
+.card-stats .stat {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  color: white;
+  padding:10px;
+}
+
+.card:hover {
+  transform: scale(1.15);
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+}
+
+.recipe__text {
+  margin-left: 15px;
+}
+
+.paginationBttns {
+  width: 80%;
+  height: 40px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.paginationBttns a {
+  padding: 10px;
+  margin: 8px;
+  border-radius: 5px;
+  border: 1px solid #2b2eff;
+  color: #2b2eff;
+  cursor: pointer;
+}
+
+.paginationBttns a:hover {
+  color: white;
+  background-color: #2b2eff;
+}
+
+.paginationActive a {
+  color: white;
+  background-color: #2b2eff;
+}
+
+.paginationDisabled a {
+  color: grey;
+  background-color: grey;
+}
